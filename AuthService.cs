@@ -8,22 +8,18 @@ namespace Simple_Banking_System
 {
     public class AuthService
     {
-        private List<User> users = new List<User>();
+        public List<User> users = new List<User>();
 
-        public void SignUp(User user)
+        public void SignUp(User UserID)
         {
-            if (users.Any(u => u.UserID == user.UserID))
-            {
-                Console.WriteLine("Username already exists."); 
-                return;
-            }
-
-            users.Add(user);
-            Console.WriteLine("User signed up successfully.");
+            
+            users.Add(UserID);
+            Console.WriteLine("test");
         }
-        /*public User Login(string UserID, string UserPassword)
+        
+        public User Login(string userid, string userpassword)
         {
-            var user = users.FirstOrDefault(u => u.UserID == Userid && u.UserPassword == password);
+            var user = users.FirstOrDefault(u => u.UserID == userid && u.UserPassword == userpassword );
             if (user != null)
             {
                 Console.WriteLine("Login successful."); 
@@ -31,6 +27,6 @@ namespace Simple_Banking_System
             }
             Console.WriteLine("Invalid credentials.");
             return null;
-        }*/
+        }
     }
 }

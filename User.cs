@@ -8,7 +8,7 @@ namespace Simple_Banking_System
 {
     public class User
     {
-        public int UserID { get; set; }
+        public string UserID { get; set; }
         public string UserPassword { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

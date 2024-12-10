@@ -21,6 +21,7 @@ namespace Simple_Banking_System
 
             accounts.Add(account);
             Console.WriteLine("Account created successfully.");
+
         }
         public void Deposit(int accountId, decimal amount)
         {
